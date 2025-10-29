@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import type { AppData, Screen, Expense, ArchivedMonth, Theme, CategoryBudgets, PocketMoneyInfo, QuickExpenseItem, BudgetStreak, SavingsGoal } from './types';
-import * as storage from './storage';
+import * as storage from './storage.ts';
 import { Category } from './types';
 
 import WelcomeScreen from './WelcomeScreen';
