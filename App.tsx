@@ -1,17 +1,18 @@
 import React, { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import type { AppData, Screen, Expense, ArchivedMonth, Theme, CategoryBudgets, PocketMoneyInfo, QuickExpenseItem, BudgetStreak, SavingsGoal } from './types';
-import * as storage from '/storage.ts';
-import { Category } from '/types';
-import WelcomeScreen from '/WelcomeScreen';
-import SetupScreen from '/SetupScreen';
-import Dashboard from '/Dashboard';
-import ExpenseFormScreen from '/AddExpenseScreen';
-import ReportScreen from '/ReportScreen' ;
-import SettingsScreen from '/SettingsScreen';
-import PreviousMonthsScreen from '/PreviousMonthsScreen';
-import SearchScreen from '/SearchScreen';
-import InsightsScreen from '/InsightsScreen';
-import LogoIcon from '/LogoIcon';
+import * as storage from './services/storage';
+import { Category } from './types';
+
+import WelcomeScreen from './components/WelcomeScreen';
+import SetupScreen from './components/SetupScreen';
+import Dashboard from './components/Dashboard';
+import ExpenseFormScreen from './components/AddExpenseScreen';
+import ReportScreen from './components/ReportScreen';
+import SettingsScreen from './components/SettingsScreen';
+import PreviousMonthsScreen from './components/PreviousMonthsScreen';
+import SearchScreen from './components/SearchScreen';
+import InsightsScreen from './components/InsightsScreen';
+import LogoIcon from './components/LogoIcon';
 
 // --- Voice Input Parsing Logic ---
 // ... (omitted for brevity, no changes)
